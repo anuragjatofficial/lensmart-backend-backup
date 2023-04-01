@@ -18,7 +18,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const uid = new ShortUniqueId({ length: 10 });
 
 const dbFile = process.env.DB || 'db.json';
-const serverPort = process.env.REACT_APP_JSON_SERVER_PORT || 9090;
+const serverPort = process.env.REACT_APP_JSON_SERVER_PORT || 3000;
 const staticDirectoryName = process.env.STATIC_FILES || 'server-files';
 
 const file = path.join(__dirname, dbFile);
